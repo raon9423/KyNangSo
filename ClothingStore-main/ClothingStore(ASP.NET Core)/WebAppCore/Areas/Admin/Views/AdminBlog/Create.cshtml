@@ -1,0 +1,46 @@
+@model WebAppCore.Models.Blog
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="page-header">
+    <div class="header-sub-title">
+        <nav class="breadcrumb breadcrumb-dash">
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Home</a>
+            <a asp-area="Admin" asp-controller="AdminBlog" asp-action="Index" class="breadcrumb-item">Danh Sách Bài Viết</a>
+            <span class="breadcrumb-item active">Tạo Mới Bài Viết</span>
+        </nav>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Nhập Thông Tin Bài Viết Mới</h4>
+        <form asp-action="Create" method="post">
+            <div class="form-group">
+                <label asp-for="Title">Tiêu Đề:</label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Scontents">Nội Dung Ngắn:</label>
+                <textarea asp-for="Scontents" class="form-control"></textarea>
+                <span asp-validation-for="Scontents" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contents">Nội Dung:</label>
+                <textarea asp-for="Contents" class="form-control"></textarea>
+                <span asp-validation-for="Contents" class="text-danger"></span>
+            </div>
+            <!-- Add other fields as needed -->
+            <button type="submit" class="btn btn-primary">Tạo Mới</button>
+        </form>
+        <br />
+        <a asp-action="Index">Quay Lại Danh Sách</a>
+        @section Scripts {
+            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        }
+    </div>
+</div>

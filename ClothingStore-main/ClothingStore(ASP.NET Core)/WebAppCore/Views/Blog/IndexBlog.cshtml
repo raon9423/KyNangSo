@@ -1,0 +1,82 @@
+﻿@{
+    ViewData["Title"] = "Blog Index";
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+<main class="main-content">
+   
+    @*<div class="blog-area blog-column-2 section-space-y-axis-100">
+        <div class="container">
+            <div class="row">
+                @if (Model != null && Model.Count > 0)
+                {
+                    foreach (var item in Model)
+                    {
+                        <div class="col-md-6">
+                            <div class="blog-item">
+                                <div class="blog-img img-zoom-effect">
+                                    <a href="@Url.Action("Privacy", "Blog", new { id = item.PostId })">
+                                        <img class="img-full" src="~/Images/Blogs/@item.Thumb" alt="@item.Title" style="width:570px; height:485px">
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta text-dim-gray pb-3">
+                                        <ul>
+                                            <li class="date"><i class="fa fa-calendar-o me-2"></i>@item.CreatedDate.ToString("MMMM dd, yyyy")</li>
+                                            <li>
+                                                <span class="comments me-3">
+                                                    <a href="javascript:void(0)">2 Comments</a>
+                                                </span>
+                                                <span class="link-share">
+                                                    <a href="javascript:void(0)">Share</a>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h5 class="title mb-4">
+                                        <a href="@Url.Action("Privacy", "Blog", new { id = item.PostId })">
+                                            @item.Title
+                                        </a>
+                                    </h5>
+                                    <p class="short-desc mb-5">@item.IsNewfeed</p>
+                                    <div class="button-wrap">
+                                        <a class="btn btn-custom-size lg-size btn-dark rounded-0" href="@Url.Action("Privacy", "Blog", new { id = item.PostId })">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                <div class="col-lg-12">
+                    <div class="pagination-area pt-10">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                @if (Model.PageCount > 1)
+                                {
+                                    <li class="page-item @(Model.HasPreviousPage ? "" : "disabled")">
+                                        <a class="page-link" href="@Url.Action("IndexBlog", new { page = Model.PageNumber - 1 })" aria-label="Previous">
+                                            <span class="fa fa-chevron-left"></span>
+                                        </a>
+                                    </li>
+
+                                    @for (int i = 1; i <= Model.PageCount; i++)
+                                    {
+                                        <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                                            <a class="page-link" href="@Url.Action("IndexBlog", new { page = i })">@i</a>
+                                        </li>
+                                    }
+
+                                    <li class="page-item @(Model.HasNextPage ? "" : "disabled")">
+                                        <a class="page-link" href="@Url.Action("IndexBlog", new { page = Model.PageNumber + 1 })" aria-label="Next">
+                                            <span class="fa fa-chevron-right"></span>
+                                        </a>
+                                    </li>
+                                }
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>*@
+</main>

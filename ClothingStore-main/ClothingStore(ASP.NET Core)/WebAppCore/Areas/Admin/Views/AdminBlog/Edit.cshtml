@@ -1,0 +1,47 @@
+@model WebAppCore.Models.Blog
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="page-header">
+    <div class="header-sub-title">
+        <nav class="breadcrumb breadcrumb-dash">
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Home</a>
+            <a asp-area="Admin" asp-controller="AdminBlog" asp-action="Index" class="breadcrumb-item">Danh Sách Bài Viết</a>
+            <span class="breadcrumb-item active">Chỉnh Sửa Thông Tin Bài Viết</span>
+        </nav>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Chỉnh Sửa Thông Tin Bài Viết</h4>
+        <form asp-action="Edit" method="post">
+            <input type="hidden" asp-for="PostId" />
+            <div class="form-group">
+                <label asp-for="Title">Tiêu Đề:</label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Scontents">Nội Dung Ngắn:</label>
+                <textarea asp-for="Scontents" class="form-control"></textarea>
+                <span asp-validation-for="Scontents" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contents">Nội Dung:</label>
+                <textarea asp-for="Contents" class="form-control"></textarea>
+                <span asp-validation-for="Contents" class="text-danger"></span>
+            </div>
+            <!-- Add other fields as needed -->
+            <button type="submit" class="btn btn-primary">Lưu Thay Đổi</button>
+        </form>
+        <br />
+        <a asp-action="Index">Quay Lại Danh Sách</a>
+        @section Scripts {
+            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        }
+    </div>
+</div>

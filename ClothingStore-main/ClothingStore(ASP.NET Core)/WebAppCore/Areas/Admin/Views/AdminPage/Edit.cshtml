@@ -1,0 +1,45 @@
+@model WebAppCore.Models.Page
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="page-header">
+    <div class="header-sub-title">
+        <nav class="breadcrumb breadcrumb-dash">
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Home</a>
+            <a asp-area="Admin" asp-controller="AdminPage" asp-action="Index" class="breadcrumb-item">Danh Sách Trang</a>
+            <span class="breadcrumb-item active">Chỉnh Sửa Thông Tin Trang</span>
+        </nav>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Chỉnh Sửa Thông Tin Trang</h4>
+        <form asp-action="Edit" method="post">
+            <input type="hidden" asp-for="PageId" />
+            <div class="form-group">
+                <label asp-for="PageName">Tên Trang:</label>
+                <input asp-for="PageName" class="form-control" />
+                <span asp-validation-for="PageName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Published">Published:</label>
+                <select asp-for="Published" class="form-control">
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                </select>
+                <span asp-validation-for="Published" class="text-danger"></span>
+            </div>
+            <!-- Add other fields as needed -->
+            <button type="submit" class="btn btn-primary">Lưu Thay Đổi</button>
+        </form>
+        <br />
+        <a asp-action="Index">Quay Lại Danh Sách</a>
+        @section Scripts {
+            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        }
+    </div>
+</div>

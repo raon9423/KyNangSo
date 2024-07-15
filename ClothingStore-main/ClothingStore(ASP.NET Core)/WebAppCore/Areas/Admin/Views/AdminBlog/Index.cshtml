@@ -1,0 +1,76 @@
+@model IEnumerable<WebAppCore.Models.Blog>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="page-header">
+    <div class="header-sub-title">
+        <nav class="breadcrumb breadcrumb-dash">
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Home</a>
+            <span class="breadcrumb-item active">Danh Sách Bài Viết</span>
+        </nav>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <div class="row m-b-20">
+            <div class="col-lg-4">
+                <div class="d-md-flex">
+                    <div class="m-b-10 m-r-15">
+                        <select class="custom-select" style="min-width: 180px;">
+                            <option selected>Category</option>
+                            <option value="all">All</option>
+                            <!-- Add other categories as needed -->
+                        </select>
+                    </div>
+                    <div class="m-b-10">
+                        <select class="custom-select" style="min-width: 180px;">
+                            <option selected>Status</option>
+                            <option value="all">All</option>
+                            <option value="published">Published</option>
+                            <option value="unpublished">Unpublished</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 text-right">
+                <a class="btn btn-primary" asp-area="Admin" asp-controller="AdminBlog" asp-action="Create"><i class="anticon anticon-plus-circle m-r-5"></i><span>Add Blog</span></a>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Status</th>
+                        <th>Author</th>
+                        <th>#</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null)
+                    {
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.PostId</td>
+                                <td>@item.Title</td>
+                                <td>@(item.Published ? "Published" : "Unpublished")</td>
+                                <td>@item.Author</td>
+                                <td>
+                                    <a class="btn btn-primary btn-tone m-r-5" asp-area="Admin" asp-controller="AdminBlog" asp-action="Details" asp-route-id="@item.PostId">View</a>
+                                    <a class="btn btn-primary btn-tone m-r-5" asp-area="Admin" asp-controller="AdminBlog" asp-action="Edit" asp-route-id="@item.PostId">Edit</a>
+                                    <a class="btn btn-primary btn-tone m-r-5" asp-area="Admin" asp-controller="AdminBlog" asp-action="Delete" asp-route-id="@item.PostId">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

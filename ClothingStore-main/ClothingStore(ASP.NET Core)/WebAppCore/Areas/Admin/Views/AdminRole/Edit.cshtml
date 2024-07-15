@@ -1,0 +1,45 @@
+@model WebAppCore.Models.Role
+@{
+    ViewData["Title"] = "Chỉnh Sửa Quyền Truy Cập";
+    Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="page-header">
+    <div class="header-sub-title">
+        <nav class="breadcrumd breadcrumb-dash">
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="breadcrumb-item"><i class="antion antion-home m-r-5"></i>Home</a>
+            <a class="breadcrumb-item" asp-area="Admin" asp-controller="AdminRole" asp-action="Index">Danh Sách Quyền Truy Cập</a>
+            <span class="breadcrumb-item active">Chỉnh Sửa Quyền Truy Cập</span>
+        </nav>
+    </div>
+</div>
+<div class="card">
+    <div class="card-body">
+        <form asp-action="Edit" asp-route-id="@Model.RoleId" method="post">
+            <div asp-validation-summary="ModelOnly" class="text.danger"></div>
+            <input type="hidden" asp-for="RoleId" />
+            <div class="from-group">
+                <div class="form-group col-md-6">
+                    <label class="col-sm-4 sol-from-label">Role Name</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" asp-for="RoleName" placeholder="Role Name">
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="col-sm-4 sol-from-label">Description</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" asp-for="Description" placeholder="Description">
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <div class="col-sm-6">
+                        <button type="submit" class="btn btn-primary">Lưu Thay Đổi</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <a asp-action="Index">Back to List</a>
+        @section Scripts {
+            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        }
+    </div>
+    </div>

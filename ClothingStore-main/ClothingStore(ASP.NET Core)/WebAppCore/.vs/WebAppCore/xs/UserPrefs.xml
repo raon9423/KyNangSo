@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{69D23AC8-DFB7-461F-9996-109532B0718A}|https">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.WebAppCore PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Product/Privacy.cshtml">
+    <Files>
+      <File FileName="Controllers/HomeController.cs" Line="16" Column="5" />
+      <File FileName="Views/Product/Index.cshtml" Line="21" Column="13" />
+      <File FileName="Views/Product/List.cshtml" Line="13" Column="28" />
+      <File FileName="Views/Home/Index.cshtml" Line="17" Column="7" />
+      <File FileName="Views/Home/About.cshtml" Line="17" Column="10" />
+      <File FileName="Views/Blog/IndexBlog.cshtml" Line="6" Column="4" />
+      <File FileName="Views/Page/Privacy.cshtml" Line="26" Column="17" />
+      <File FileName="Views/Home/Contact.cshtml" Line="7" Column="3" />
+      <File FileName="Views/ShoppingCart/IndexCart.cshtml" Line="8" Column="28" />
+      <File FileName="Views/ShoppingCart/PrivacyCart.cshtml" Line="9" Column="1" />
+      <File FileName="Views/Product/Privacy.cshtml" Line="19" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WebAppCore" expanded="True">
+            <Node name="WebAppCore" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Blog" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Page" expanded="True" />
+                <Node name="Product" expanded="True">
+                  <Node name="Privacy.cshtml" selected="True" />
+                </Node>
+                <Node name="ShoppingCart" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

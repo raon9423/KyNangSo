@@ -1,0 +1,139 @@
+﻿@using X.PagedList.Mvc.Core
+@using X.PagedList
+@model X.PagedList.PagedList<WebAppCore.ModelViews.CartItem>
+@{
+    ViewData["Title"] = "IndexCart";
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+<main class="main-content">
+    <div class="cart-area section-space-y-axis-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    @if (Model != null && Model.Count() > 0)
+                    {
+                        <form action="javascript:void(0)">
+                            <div class="table-content table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th class="product_remove">remove</th>
+                                            <th class="product-thumbnail">images</th>
+                                            <th class="cart-product-name">Product</th>
+                                            <th class="product-price">Unit Price</th>
+                                            <th class="product-quantity">Quantity</th>
+                                            <th class="product-subtotal">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @if (Model != null && Model.Count() > 0)
+                                        {
+                                            foreach (var item in Model)
+                                            {
+                                                <tr>
+                                                  <td class="product_remove">
+                                                      <a href="javascript:void(0)" onclick="removeCartItem(@item.Product.ProductId)">
+                                                          <i class="pe-7s-close" title="Remove"></i>
+                                                      </a>
+                                                  </td>
+                                                    <td class="product-thumbnail">
+                                                        <a href="javascript:void(0)">
+                                                            <img src="~/Images/Products/@item.Product.Thumb" alt="@item.Product.Title" style="width:112px ; height:124px">
+                                                        </a>
+                                                    </td>
+                                                    <td class="product-name"><a href="javascript:void(0)">@item.Product.ProductName</a></td>
+                                                    <td class="product-price"><span class="amount">@item.Product.Price</span></td>
+                                                    <td class="quantity">
+                                                        <div class="cart-plus-minus">
+                                                            <input class="cart-plus-minus-box" value="@item.Amount" type="text">
+                                                        </div>
+                                                    </td>
+                                                    <td class="product-subtotal"><span class="amount">@item.TotalMoney</span></td>
+                                                </tr>
+                                            }
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="coupon-all">
+                                        <div class="coupon">
+                                            <input id="coupon_code" class="input-text" name="coupon_code" value="" placeholder="Coupon code" type="text">
+                                            <input class="button mt-xxs-30" name="apply_coupon" value="Apply coupon" type="submit">
+                                        </div>
+                                        <div class="coupon2">
+                                            <input class="button" name="update_cart" value="Update cart" type="submit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5 ml-auto">
+                                    <div class="cart-page-total">
+                                        <h2>Cart totals</h2>
+                                        <ul>
+                                            <li>Subtotal <span>@Model.Sum(x => x.TotalMoney)</span></li>
+                                        </ul>
+                                        <a href="@Url.Action("PrivacyCart", "ShoppingCart")">Proceed to Checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    }
+                    else
+                    {
+                        <h2 style="text-align: center;">No Cart</h2>
+
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+@section Scripts {
+    <script>// ... (your existing code) ...
+
+        $(document).ready(function () {
+            $(".cart-plus-minus-box").change(function () {
+                var productId = $(this).data("product-id");
+                var newAmount = $(this).val();
+
+                updateCartItem(productId, newAmount);
+            });
+
+            function updateCartItem(productId, newAmount) {
+                console.log('Updating cart item:', productId, newAmount);
+
+                $.ajax({
+                    url: '/ShoppingCart/UpdateCart',
+                    type: 'POST',
+                    data: { productId: productId, amount: newAmount },
+                    success: function (data) {
+                        console.log('Cart item updated successfully');
+                    },
+                    error: function (error) {
+                        console.error('Error updating cart item:', error);
+                    }
+                });
+            }
+
+            function removeCartItem(productId) {
+                console.log('Removing cart item:', productId);
+
+                $.ajax({
+                    url: '/ShoppingCart/RemoveFromCart',
+                    type: 'POST',
+                    data: { productID: productId },
+                    success: function (data) {
+                        console.log('Cart item removed successfully');
+                    },
+                    error: function (error) {
+                        console.error('Error removing cart item:', error);
+                    }
+                });
+            }
+        });
+        }</script>
+}

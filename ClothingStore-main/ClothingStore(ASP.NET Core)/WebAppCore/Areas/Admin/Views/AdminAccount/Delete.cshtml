@@ -1,0 +1,43 @@
+@model WebAppCore.Models.Account
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="page-header">
+    <div class="header-sub-title">
+        <nav class="breadcrumb breadcrumb-dash">
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="breadcrumb-item"><i class="antion antion-home m-r-5"></i>Home</a>
+            <a class="breadcrumb-item" asp-area="Admin" asp-controller="AdminAccount" asp-action="Index">Danh Sách Tài Khoản</a>
+            <span class="breadcrumb-item active">Tạo Mới Quyền Truy Cập</span>
+        </nav>
+    </div>
+</div>
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Confirm Delete</h4>
+        <div class="table-responsive">
+            <table class="product-info-table m-t-20">
+                <tr>
+                    <td>ID</td>
+                    <td class="text-dart font-weight-semibold">@Model.AccountId</td>
+                </tr>
+                <tr>
+                    <td>Full Name</td>
+                    <td>@Model.FullName</td>
+                </tr>
+                <!-- Add other fields as needed -->
+                <tr>
+                    <td>Confirm Delete</td>
+                    <td>
+                        <form asp-action="Delete" asp-route-id="@Model.AccountId">
+                            <input type="hidden" asp-for="AccountId" />
+                            <input type="submit" value="Delete" class="btn btn-danger" />
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>

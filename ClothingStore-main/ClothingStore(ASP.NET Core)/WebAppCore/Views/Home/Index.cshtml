@@ -1,0 +1,155 @@
+﻿@using X.PagedList.Mvc.Core
+@using X.PagedList
+@model WebAppCore.ModelViews.HomeViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+@{
+    List<Product> allProducts = Model.AllProducts;
+}
+@*<div class="slider-area">
+    <div class="swiper-container main-slider-2 swiper-arrow with-bg_white">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide animation-style-01">
+                <div class="slide-inner bg-height" data-bg-image="assets/images/slider/slider-0.jpeg">
+                    <div class="container">
+                        <div class="slide-content">
+                            <h2 class="title font-weight-bold mb-4" style="color:white">Chivalry<br> Products</h2>
+                            <p class="short-desc different-width mb-9" style="color:white">Best Offer Products 100% Naturan Healthy Food For Your Life</p>
+                            <div class="button-wrap">
+                                <a class="btn btn-custom-size lg-size btn-primary btn-white-hover rounded-0" href="shop.html">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide animation-style-01">
+                <div class="slide-inner bg-height" data-bg-image="assets/images/slider/slider-0.jpeg">
+                    <div class="container">
+                        <div class="slide-content">
+                            <h2 class="title font-weight-bold mb-4" style="color:white">Chivalry<br> Products</h2>
+                            <p class="short-desc different-width mb-9" style="color:white">Best Offer Products 100% Naturan Healthy Food For Your Life</p>
+                            <div class="button-wrap" style="color: #4F4F4F;">
+                                <a style="color: #4F4F4F;" class="btn btn-custom-size lg-size btn-primary btn-white-hover rounded-0" asp-controller="Product" asp-action="Index" >Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination with-bg d-md-none"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+    </div>
+
+</div>*@
+<div class="swiper-pagination with-bg d-md-none"></div>
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+<div class="shipping-area section-space-top-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="shipping-item">
+                    <div class="shipping-img">
+                    </div>
+                    <div class="shipping-content">
+                        <h5 class="title">Free Shipping</h5>
+                        <p class="short-desc mb-0">Free Home Delivery Offer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pt-6 pt-md-0">
+                <div class="shipping-item">
+                    <div class="shipping-img">
+                    </div>
+                    <div class="shipping-content">
+                        <h5 class="title">Online Support</h5>
+                        <p class="short-desc mb-0">24/7 Online Support Provide</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pt-6 pt-lg-0">
+                <div class="shipping-item">
+                    <div class="shipping-img">
+                    </div>
+                    <div class="shipping-content">
+                        <h5 class="title">Secure Payment</h5>
+                        <p class="short-desc mb-0">Fully Secure Payment System</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@*<div class="faq-area section-space-y-axis-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="frequently-area">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="frequently-item">
+                                          <img class="img-full" src="/assets/images/Top.jpg"alt="Product Images" style="width:700px; height:450px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pt-6 pt-md-0">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="frequently-item">
+                                          <img class="img-full" src="/assets/images/Bottom.jpg" alt="Product Images" style="width:700px; height:450px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>*@
+            <div class="col-lg-12">
+                <div class="team-member section-space-top-100">
+                    <div class="container">
+                        <div class="section-title text-center pb-55">
+                            <span class="sub-title text-primary">Hand Work</span>
+                            <h2 class="title mb-0">NEW PRODUCT</h2>
+                        </div>
+                        <div class="product-item-wrap row">
+                            @foreach (var product in ViewBag.RandomProducts)
+                            {
+                               string url = Url.Action("Privacyc", "Product", new { id = product.ProductId });
+                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <div class="product-item">
+                                    <div class="product-img img-zoom-effect">
+                                        <a href="@url">
+                                            <img class="img-full" src="~/Images/Products/@product.Thumb" alt="Product Images" style="width:270px; height:300px">
+                                        </a>
+                                        <div class="product-add-action">
+                                            <ul>
+                                                <li>
+                                                    <a href="cart.html">
+                                                        <i class="pe-7s-cart"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <a class="product-name" href="single-product.html">@product.ProductName</a>
+                                        <div class="price-box pb-1">
+                                            <span class="new-price">$@product.Price.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br /><br /><br /><br />

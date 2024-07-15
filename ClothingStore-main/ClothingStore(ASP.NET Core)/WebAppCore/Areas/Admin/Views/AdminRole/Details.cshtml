@@ -1,0 +1,40 @@
+@model WebAppCore.Models.Role
+@{
+    ViewData["Title"] = "Thông Tin Quyền Truy Cập";
+    Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="page-header">
+    <div class="header-sub-title">
+        <nav class="breadcrumb breadcrumb-dash">
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Home</a>
+            <a asp-area="Admin" asp-controller="AdminRole" asp-action="Index" class="breadcrumb-item">Danh Sách Quyền Truy Cập</a>
+            <span class="breadcrumb-item active">Chỉnh Sửa Quyền Truy Cập</span>
+        </nav>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Thông Tin Quyền Truy Cập</h4>
+        <div class="table-responsive">
+            <table class="product-info-table m-t-20">
+                <tr>
+                    <td>ID</td>
+                    <td class="text-dart font-weight-semibold">@Model?.RoleId</td>
+                </tr>
+                <tr>
+                    <td>Tên Quyền Truy Cập</td>
+                    <td>@Model?.RoleName</td>
+                </tr>
+                <tr>
+                    <td>Mô Tả</td>
+                    <td>@Model?.Description</td>
+                </tr>
+            </table>
+        </div>
+        <a asp-action="Index">Back to List</a>
+        @section Scripts {
+            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        }
+    </div>
+</div>

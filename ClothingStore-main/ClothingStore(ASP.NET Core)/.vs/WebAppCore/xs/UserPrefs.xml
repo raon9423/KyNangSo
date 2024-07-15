@@ -1,0 +1,156 @@
+﻿<Properties StartupConfiguration="{0393980C-D29B-40C1-9AE5-7C4B56F66ABF}|https">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebAppCore/Controllers/HomeController.cs">
+    <Files>
+      <File FileName="WebAppCore/Models/SqlwebchivalryContext.cs" />
+      <File FileName="WebAppCore/Models/AttributesPrice.cs" />
+      <File FileName="WebAppCore/Areas/Admin/Controllers/HomeController.cs" />
+      <File FileName="WebAppCore/Areas/Admin/Views/Shared/_AdminLayout.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Controllers/AdminAccountController.cs" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminAccount/Index.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminAccount/Edit.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminAccount/Details.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminAccount/Delete.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminAccount/Create.cshtml" />
+      <File FileName="WebAppCore/Program.cs" />
+      <File FileName="WebAppCore/Models/Attribute.cs" />
+      <File FileName="WebAppCore/Models/Product.cs" />
+      <File FileName="WebAppCore/Areas/Admin/Controllers/AdminRoleController.cs" />
+      <File FileName="WebAppCore/Models/Account.cs" Line="1" Column="1" />
+      <File FileName="WebAppCore/Models/Category.cs" />
+      <File FileName="WebAppCore/Models/Customer.cs" />
+      <File FileName="WebAppCore/Models/Location.cs" />
+      <File FileName="WebAppCore/Models/Order.cs" />
+      <File FileName="WebAppCore/Models/OrderDetail.cs" />
+      <File FileName="WebAppCore/Models/Page.cs" />
+      <File FileName="WebAppCore/Models/Role.cs" />
+      <File FileName="WebAppCore/Models/TransactStatus.cs" />
+      <File FileName="WebAppCore/Views/Shared/_FooterPartia.cshtml" />
+      <File FileName="WebAppCore/Views/Shared/_HeaderPartia.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/Home/Index.cshtml" />
+      <File FileName="WebAppCore/Views/Home/Index.cshtml" />
+      <File FileName="WebAppCore/Controllers/HomeController.cs" Line="24" Column="1" />
+      <File FileName="WebAppCore/Views/Shared/_Layout.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/Shared/_SileNav.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml" />
+      <File FileName="WebAppCore/Views/Home/About.cshtml" />
+      <File FileName="WebAppCore/Views/Home/Contact.cshtml" />
+      <File FileName="WebAppCore/Controllers/BlogController.cs" />
+      <File FileName="WebAppCore/Views/Product/Index.cshtml" />
+      <File FileName="WebAppCore/Views/Product/Privacy.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminRole/Edit.cshtml" />
+      <File FileName="WebAppCore/appsettings.json" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminRole/Index.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminRole/Details.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminRole/Delete.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminRole/Create.cshtml" />
+      <File FileName="WebAppCore/Controllers/ProductController.cs" />
+      <File FileName="WebAppCore/Areas/Admin/Controllers/AdminProductController.cs" />
+      <File FileName="WebAppCore/Areas/Admin/Controllers/AdminPageController.cs" />
+      <File FileName="WebAppCore/Areas/Admin/Controllers/AdminCustomerController.cs" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminPage/Edit.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminPage/Index.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminProduct/Index.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminProduct/Edit.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminProduct/Details.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminProduct/Create.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminPage/Details.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminPage/Create.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminCustomer/Index.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminCustomer/Edit.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminCustomer/Details.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminCustomer/Create.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminCategory/Index.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminCategory/Edit.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminCategory/Details.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminCategory/Delete.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminCategory/Create.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Controllers/AdminCategoryController.cs" />
+      <File FileName="WebAppCore/Views/_ViewStart.cshtml" />
+      <File FileName="WebAppCore/Views/_ViewImports.cshtml" />
+      <File FileName="WebAppCore/Views/Shared/Error.cshtml" />
+      <File FileName="WebAppCore/Views/Shared/_ValidationScriptsPartial.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Controllers/SearchController.cs" />
+      <File FileName="WebAppCore/Models/ErrorViewModel.cs" />
+      <File FileName="WebAppCore/Models/Blog.cs" />
+      <File FileName="WebAppCore/Views/Blog/Privacy.cshtml" />
+      <File FileName="WebAppCore/Views/Page/Privacy.cshtml" />
+      <File FileName="WebAppCore/Views/Account/Register.cshtml" />
+      <File FileName="WebAppCore/Views/Account/Login.cshtml" />
+      <File FileName="WebAppCore/ModelViews/RegisterViewModel.cs" />
+      <File FileName="WebAppCore/ModelViews/LoginViewModel.cs" />
+      <File FileName="../../../Downloads/harmichtml-101/harmichtml-101/harmic/login-register.html" />
+      <File FileName="WebAppCore/Controllers/AccountController.cs" />
+      <File FileName="WebAppCore/Controllers/PageController.cs" />
+      <File FileName="WebAppCore/Extension/HashMD5.cs" />
+      <File FileName="WebAppCore/Extension/SessionExtension.cs" />
+      <File FileName="WebAppCore/Repositories/OrderRepository.cs" />
+      <File FileName="WebAppCore/Services/IOrderService.cs" />
+      <File FileName="WebAppCore/Services/OrderService.cs" />
+      <File FileName="../../../Downloads/harmichtml-101/harmichtml-101/harmic/index-2.html" />
+      <File FileName="WebAppCore/Areas/Admin/Controllers/AdminBlogController.cs" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminBlog/Index.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminBlog/Edit.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminBlog/Details.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminBlog/Delete.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminBlog/Create.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/Search/ListProductSearchPartial.cshtml" />
+      <File FileName="../../../Downloads/harmichtml-101_12222/harmichtml-101/harmic/my-account.html" />
+      <File FileName="WebAppCore/ModelViews/OrderViewModel.cs" />
+      <File FileName="WebAppCore/Controllers/OrderController.cs" />
+      <File FileName="WebAppCore/Repositories/IOrderRepository.cs" />
+      <File FileName="WebAppCore/Views/Product/List.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/_ViewStart.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/Shared/Error.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/_ViewImports.cshtml" />
+      <File FileName="WebAppCore/ModelViews/HomeViewModel.cs" />
+      <File FileName="WebAppCore/ModelViews/ProductViewModel.cs" />
+      <File FileName="WebAppCore/Services/INotyfServices.cs" />
+      <File FileName="WebAppCore/Services/NotyfServices.cs" />
+      <File FileName="WebAppCore/Helpper/Utilities.cs" />
+      <File FileName="WebAppCore/ModelViews/CartItem.cs" />
+      <File FileName="WebAppCore/Controllers/ShoppingCartController.cs" />
+      <File FileName="../../../Downloads/harmichtml-101_12222/harmichtml-101/harmic/cart.html" />
+      <File FileName="WebAppCore/Views/ShoppingCart/IndexCart.cshtml" />
+      <File FileName="../../../Downloads/harmichtml-101_12222/harmichtml-101/harmic/checkout.html" />
+      <File FileName="WebAppCore/Views/Blog/IndexBlog.cshtml" />
+      <File FileName="WebAppCore/Views/ShoppingCart/PrivacyCart.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminPage/Delete.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminProduct/Delete.cshtml" />
+      <File FileName="WebAppCore/Areas/Admin/Views/AdminCustomer/Delete.cshtml" />
+      <File FileName="../../../Downloads/harmichtml-101_12222/harmichtml-101/harmic/faq.html" />
+      <File FileName="WebAppCore/wwwroot/assets/css/style.css" />
+      <File FileName="WebAppCore/wwwroot/assets/css/vendor/vendor.min.css" />
+      <File FileName="WebAppCore/wwwroot/assets/css/vendor/Pe-icon-7-stroke.css" />
+      <File FileName="WebAppCore/wwwroot/assets/css/vendor/font-awesome.min.css" />
+      <File FileName="WebAppCore/wwwroot/assets/css/plugins/swiper-bundle.min.css" />
+      <File FileName="WebAppCore/wwwroot/assets/css/plugins/plugins.min.css" />
+      <File FileName="WebAppCore/wwwroot/assets/css/plugins/nice-select.css" />
+      <File FileName="WebAppCore/wwwroot/assets/css/plugins/animate.css" />
+      <File FileName="WebAppCore/wwwroot/css/site.css" />
+      <File FileName="../../../Downloads/harmichtml-101_12222/harmichtml-101/harmic/index-2.html" />
+      <File FileName="WebAppCore/Views/Account/Clause.cshtml" />
+      <File FileName="WebAppCore/Properties/launchSettings.json" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WebAppCore" expanded="True">
+            <Node name="WebAppCore" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.WebAppCore PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

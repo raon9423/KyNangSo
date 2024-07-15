@@ -1,0 +1,222 @@
+﻿    @model WebAppCore.Models.Product
+@{
+    if (Model != null && Model.Title != null)
+    {
+        ViewData["Title"] = Model.Title.ToString();
+    }
+    Layout = "/Views/Shared/_Layout.cshtml";
+    List<Product> lsProducts = ViewBag.SanPham;
+}
+<main class="main-content">
+   s
+    <div class="single-product-area section-space-top-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-product-img h-100">
+                        <div class="swiper-container single-product-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="~/Images/Products/@Model.Thumb" class="single-img gallery-popup">
+                                        <img class="img-full" src="~/Images/Products/@Model.Thumb" alt="@Model.Title">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="~/Images/Products/@Model.Thumb" class="single-img gallery-popup">
+                                        <img class="img-full" src="~/Images/Products/@Model.Thumb" alt="@Model.Title">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="~/Images/Products/@Model.Thumb" class="single-img gallery-popup">
+                                        <img class="img-full" src="~/Images/Products/@Model.Thumb" alt="@Model.Title">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="~/Images/Products/@Model.Thumb" class="single-img gallery-popup">
+                                        <img class="img-full" src="~/Images/Products/@Model.Thumb" alt="@Model.Title">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-thumb-with-content row">
+                        <div class="col-12 order-lg-1 order-2 pt-10 pt-lg-0">
+                            <div class="single-product-content">
+                                <h2 class="title">@Model.ProductName</h2>
+                                <div class="price-box pb-1">
+                                    <span class="new-price text-danger">@Model.Price</span>
+                                </div>
+                                <p class="short-desc mb-6">
+                                    @Model.ShortDesc
+                                </p>
+                                <ul class="quantity-with-btn pb-7">
+                                    <li class="quantity">
+                                        <div class="cart-plus-minus">
+                                            <input class="cart-plus-minus-box" value="1" type="text">
+                                        </div>
+                                    </li>
+                                    <li class="add-to-cart">
+                                        <a class="btn btn-custom-size lg-size btn-primary btn-secondary-hover rounded-0" href="cart.html">Add to cart</a>
+                                    </li>
+                                </ul>
+                                <div class="product-category text-matterhorn pb-2">
+                                    <span class="title">Categories :</span>
+                                    <ul>
+                                        <li>
+                                            <a href="/@Model.Cat.Alias">@Model.Cat.CatName</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 order-lg-2 order-1 pt-10 pt-lg-0">
+                            <div class="swiper-container single-product-thumbs">
+                                <div class="swiper-wrapper">
+                                    <a href="javascript:void(0)" class="swiper-slide">
+                                        <img class="img-full" src="~/Images/Products/@Model.Thumb" alt="@Model.Title ">
+                                    </a>
+                                    <a href="javascript:void(0)" class="swiper-slide">
+                                        <img class="img-full" src="~/Images/Products/@Model.Thumb" alt="@Model.Title ">
+                                    </a>
+                                    <a href="javascript:void(0)" class="swiper-slide">
+                                        <img class="img-full" src="~/Images/Products/@Model.Thumb" alt="@Model.Title ">
+                                    </a>
+                                    <a href="javascript:void(0)" class="swiper-slide">
+                                        <img class="img-full" src="~/Images/Products/@Model.Thumb" alt="@Model.Title ">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product-tab-area section-space-top-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="nav product-tab-nav product-tab-style-2" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="active btn btn-custom-size" id="description-tab" data-bs-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">
+                                Description
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="btn btn-custom-size" id="shipping-tab" data-bs-toggle="tab" href="#shipping" role="tab" aria-controls="shipping" aria-selected="false">
+                                Shipping
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content product-tab-content">
+                        <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                            <div class="product-description-body">
+                                <p class="short-desc mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteurdf sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusl doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore v et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptadtem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="shipping" role="tabpanel" aria-labelledby="shipping-tab">
+                            <div class="product-shipping-body">
+                                <h4 class="title">Shipping</h4>
+                                <p class="short-desc mb-4">The item will be shipped from China. So it need 15-20 days to deliver. Our product is good with reasonable price and we believe you will worth it. So please wait for it patiently! Thanks.Any question please kindly to contact us and we promise to work hard to help you to solve the problem</p>
+                                <h4 class="title">About return request</h4>
+                                <p class="short-desc mb-4">If you don't need the item with worry, you can contact us then we will help you to solve the problem, so please close the return request! Thanks</p>
+                                <h4 class="title">Guarantee</h4>
+                                <p class="short-desc mb-0">If it is the quality question, we will resend or refund to you; If you receive damaged or wrong items, please contact us and attach some pictures about product, we will exchange a new correct item to you after the confirmation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product-slider-area section-space-top-95 section-space-bottom-100">
+        <div class="container">
+            <div class="section-title text-center pb-55">
+                <span class="sub-title text-primary">You Can Be Love It</span>
+                <h2 class="title mb-0">Related Products</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="swiper-slider-holder swiper-arrow">
+                        <div class="swiper-container product-slider border-issue">
+                            <div class="swiper-wrapper">
+                                @if (lsProducts != null)
+                                {
+                                    foreach (var item in lsProducts)
+                                    {
+                                        string url = "";
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-img img-zoom-effect">
+                                                    <a href="@url ">
+                                                        <img class="img-full" src="~/Images/Products/@item.Thumb" alt="@item.Title ">
+                                                    </a>
+                                                    <div class="product-add-action">
+                                                        <ul>
+                                                            <li>
+                                                                <form asp-controller="ShoppingCart" asp-action="AddToCart" method="post">
+                                                                    <input type="hidden" name="productID" value="@item.ProductId" />
+                                                                    <input type="hidden" name="amount" value="1" /> 
+                                                                    <a href="javascript:void(0)" onclick="this.parentNode.submit();">
+                                                                        <i class="pe-7s-cart"></i>
+                                                                    </a>
+                                                                </form>
+                                                            </li>                                                       
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content texx">
+                                                    <a class="product-name" href="@url">@item.ProductName</a>
+                                                    <div class="price-box pb-1">
+                                                        <span class="new-price">@item.Price</span>
+                                                    </div>                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+@section Scripts {
+    <Script>$(document).ready(function () {
+            $(".addToCart").click(function () {
+                var productId = parseFloat($(this).attr("data-productid"));
+                $.ajax({
+                    url: '/api/cart/add',
+                    type: 'POST',
+                    dataType: 'JSON',
+                    data: { productid: productId },
+                    success: function (response) {
+                        if (response.result === 'Redirect') {
+                            window.location = response.url;
+                        } else {
+                            loadHeaderCart();
+                            location.reload();
+                        }
+                        console.log(response);
+                    },
+                    error: function (error) {
+                        alert("There was an error posting the data to the server: " + error.responseText);
+                    }
+                });
+            });
+
+            function loadHeaderCart() {
+                $("#headerCart").load('/AjaxContext/HeaderCart');
+            }
+});
+    </Script>
+}

@@ -1,0 +1,52 @@
+@model WebAppCore.Models.Blog
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="page-header">
+    <div class="header-sub-title">
+        <nav class="breadcrumb breadcrumb-dash">
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Home</a>
+            <a asp-area="Admin" asp-controller="AdminBlog" asp-action="Index" class="breadcrumb-item">Danh Sách Bài Viết</a>
+            <span class="breadcrumb-item active">Xác Nhận Xoá Bài Viết</span>
+        </nav>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Thông Tin Bài Viết</h4>
+        <div class="table-responsive">
+            <table class="table">
+                <tr>
+                    <td>ID</td>
+                    <td class="text-dart font-weight-semibold">@Model.PostId</td>
+                </tr>
+                <tr>
+                    <td>Tiêu Đề</td>
+                    <td>@Model.Title</td>
+                </tr>
+                <tr>
+                    <td>Nội Dung Ngắn</td>
+                    <td>@Model.Scontents</td>
+                </tr>
+                <tr>
+                    <td>Nội Dung</td>
+                    <td>@Model.Contents</td>
+                </tr>
+                <!-- Add other fields as needed -->
+                <tr>
+                    <td>Xác Nhận Xoá</td>
+                    <td>
+                        <form asp-action="Delete" asp-route-id="@Model.PostId">
+                            <input type="submit" value="Xoá" class="btn btn-danger" />
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <a asp-action="Index">Quay Lại Danh Sách</a>
+    </div>
+</div>

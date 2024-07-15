@@ -1,0 +1,273 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebAppCore
+build_property.RootNamespace = WebAppCore
+build_property.ProjectDir = /Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = /Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminAccount/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5BY2NvdW50L0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminAccount/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5BY2NvdW50L0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminAccount/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5BY2NvdW50L0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminAccount/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5BY2NvdW50L0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminAccount/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5BY2NvdW50L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminBlog/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5CbG9nL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminBlog/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5CbG9nL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminBlog/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5CbG9nL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminBlog/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5CbG9nL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminBlog/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5CbG9nL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminCategory/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5DYXRlZ29yeS9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminCategory/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5DYXRlZ29yeS9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminCategory/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5DYXRlZ29yeS9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminCategory/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5DYXRlZ29yeS9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminCategory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5DYXRlZ29yeS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminCustomer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5DdXN0b21lci9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminCustomer/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5DdXN0b21lci9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminCustomer/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5DdXN0b21lci9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminCustomer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5DdXN0b21lci9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminCustomer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5DdXN0b21lci9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminPage/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5QYWdlL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminPage/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5QYWdlL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5QYWdlL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5QYWdlL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5QYWdlL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminProduct/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5Qcm9kdWN0L0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminProduct/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5Qcm9kdWN0L0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminProduct/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5Qcm9kdWN0L0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminProduct/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5Qcm9kdWN0L0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminProduct/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5Qcm9kdWN0L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminRole/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5Sb2xlL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminRole/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5Sb2xlL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminRole/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5Sb2xlL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminRole/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5Sb2xlL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/AdminRole/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5Sb2xlL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/Search/ListProductSearchPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2VhcmNoL0xpc3RQcm9kdWN0U2VhcmNoUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/Shared/_SileNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19TaWxlTmF2LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Views/Account/Clause.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9DbGF1c2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Views/Blog/IndexBlog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmxvZy9JbmRleEJsb2cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Views/Blog/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmxvZy9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Views/Page/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFnZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Views/Product/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9MaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Views/Product/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Views/Shared/_FooterPartia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Gb290ZXJQYXJ0aWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Views/Shared/_HeaderPartia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19IZWFkZXJQYXJ0aWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Views/ShoppingCart/IndexCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hvcHBpbmdDYXJ0L0luZGV4Q2FydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Views/ShoppingCart/PrivacyCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hvcHBpbmdDYXJ0L1ByaXZhY3lDYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Areas/Admin/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-206ynyyhz9
+
+[/Users/than9423/Downloads/ClothingStore-main/ClothingStore(ASP.NET Core)/WebAppCore/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-t90r1pu28y

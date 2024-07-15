@@ -1,0 +1,39 @@
+@model WebAppCore.Models.Category
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<<div class="page-header">
+    <div class="header-sub-title">
+        <nav class="breadcrumb breadcrumb-dash">
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Home</a>
+            <a asp-area="Admin" asp-controller="AdminCategory" asp-action="Index" class="breadcrumb-item">Danh Sách Danh Mục</a>
+            <span class="breadcrumb-item active">Chỉnh Sửa Thông Tin Danh Mục</span>
+        </nav>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Chỉnh Sửa Thông Tin Danh Mục</h4>
+        <form asp-action="Edit" method="post">
+            <input type="hidden" asp-for="CatId" />
+            <div class="form-group">
+                <label asp-for="CatName">Tên Danh Mục:</label>
+                <input asp-for="CatName" class="form-control" />
+                <span asp-validation-for="CatName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description">Mô Tả:</label>
+                <textarea asp-for="Description" class="form-control"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <!-- Add other fields as needed -->
+            <button type="submit" class="btn btn-primary">Lưu Thay Đổi</button>
+        </form>
+        <br />
+        <a asp-action="Index">Quay Lại Danh Sách</a>
+    </div>
+</div>

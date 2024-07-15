@@ -1,0 +1,248 @@
+﻿@using X.PagedList.Mvc.Core
+@using X.PagedList
+@model X.PagedList.PagedList<WebAppCore.Models.Product>
+
+@{
+    ViewData["Title"] = Model.FirstOrDefault()?.Title?.ToString();
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<main class="main-content">
+    @*<div class="breadcrumb-area breadcrumb-height" data-bg-image="/assets/images/anhabouts.jpg">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-item">
+                        <h2 class="breadcrumb-heading" style="color:white">Shop</h2>
+                        <ul>
+                            <li>
+                                <a asp-controller="Home" asp-action="Index" style="color:white">Home <i class="pe-7s-angle-right"></i></a>
+                            </li>
+                            <li style="color:white">Shop</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>*@
+    <div class="shop-area section-space-y-axis-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 order-lg-1 order-2 pt-10 pt-lg-0">
+                    <div class="sidebar-area">
+                        <div class="widgets-searchbox mb-9">
+                            <form id="widgets-searchbox" action="#">
+                                <input class="input-field" type="text" placeholder="Search">
+                                <button class="widgets-searchbox-btn" type="submit">
+                                    <i class="pe-7s-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="widgets-area mb-9">
+                            <h2 class="widgets-title mb-5">Refine By</h2>
+                            <div class="widgets-item">
+                                <ul class="widgets-checkbox">
+                                    <li>
+                                        <input class="input-checkbox" type="checkbox" id="refine-item">
+                                        <label class="label-checkbox mb-0" for="refine-item">
+                                            On Sale
+                                            <span>4</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input class="input-checkbox" type="checkbox" id="refine-item-2" checked>
+                                        <label class="label-checkbox mb-0" for="refine-item-2">
+                                            New
+                                            <span>4</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input class="input-checkbox" type="checkbox" id="refine-item-3">
+                                        <label class="label-checkbox mb-0" for="refine-item-3">
+                                            In Stockd
+                                            <span>4</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="widgets-area widgets-filter mb-9">
+                            <h2 class="widgets-title mb-5">Price Filter</h2>
+                            <div class="price-filter">
+                                <div id="slider-range"></div>
+                                <div class="price-slider-amount">
+                                    <button class="btn btn-primary btn-secondary-hover">Filter</button>
+                                    <div class="label-input position-relative">
+                                        <label>price : </label>
+                                        <input type="text" id="amount" name="price" placeholder="Add Your Price" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widgets-area mb-9">
+                            <h2 class="widgets-title mb-5">Color</h2>
+                            <div class="widgets-item">
+                                <ul class="widgets-checkbox">
+                                 
+                                    <li>
+                                        <input class="input-checkbox" type="checkbox" id="color-selection-3">
+                                        <label class="label-checkbox mb-0" for="color-selection-3">
+                                            White
+                                            <span>4</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input class="input-checkbox" type="checkbox" id="color-selection-4">
+                                        <label class="label-checkbox mb-0" for="color-selection-4">
+                                            Black
+                                            <span>6</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="widgets-area mb-9">
+                            <h2 class="widgets-title mb-5">Size</h2>
+                            <div class="widgets-item">
+                                <ul class="widgets-checkbox">
+                                    <li>
+                                        <input class="input-checkbox" type="checkbox" id="size-selection-1">
+                                        <label class="label-checkbox mb-0" for="size-selection-1">XL</label>
+                                    </li>
+                                    <li>
+                                        <input class="input-checkbox" type="checkbox" id="size-selection-2" checked>
+                                        <label class="label-checkbox mb-0" for="size-selection-2">L</label>
+                                    </li>
+                                    <li>
+                                        <input class="input-checkbox" type="checkbox" id="size-selection-3">
+                                        <label class="label-checkbox mb-0" for="size-selection-3">SM</label>
+                                    </li>
+                                    <li>
+                                        <input class="input-checkbox" type="checkbox" id="size-selection-4">
+                                        <label class="label-checkbox mb-0" for="size-selection-4">XXL</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                      
+                        <div class="widgets-area">
+                            <h2 class="widgets-title mb-5">Tag</h2>
+                            <div class="widgets-item">
+                                <ul class="widgets-tags">
+                                    <li>
+                                        <a href="@Url.Action("List", new { Alias = "alias1" })">Tự lực</a>
+                                    </li>
+                                    <li>
+                                        <a href="@Url.Action("List", new { Alias = "alias2" })">Truyện</a>
+                                    </li>
+                                    <li>
+                                        <a href="@Url.Action("List", new { Alias = "alias3" })">Học</a>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 order-lg-2 order-1">
+                    <div class="product-topbar">
+                        <ul>
+                            <li class="product-view-wrap">
+                                <ul class="nav" role="tablist">
+                                    <li class="grid-view" role="presentation">
+                                    </li>
+                                    <li class="list-view" role="presentation">
+                                        <a class="active" id="list-view-tab" data-bs-toggle="tab" href="#list-view" role="tab" aria-selected="true">
+                                            <i class="fa fa-th-list"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="page-count">
+                                <span>5</span> Product Found of <span>8</span>
+                            </li>
+                            <li class="short">
+                                <select class="nice-select wide rounded-0">
+                                    <option value="1">Accessories</option>
+                                    <option value="2">Top</option>
+                                    <option value="3">Bomttop</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content text-charcoal pt-8">
+                        <div class="tab-pane fade show active" id="list-view" role="tabpanel" aria-labelledby="list-view-tab">
+                            <div class="product-list-view with-sidebar row">
+                                @if (Model != null && Model.Count() > 0)
+                                {
+                                    foreach (var item in Model)
+                                    {
+                                        string url = Url.RouteUrl("Privacyc", new { id = item.ProductId, Alias = item.Alias });
+                                        <div class="col-12">
+                                            <div class="product-item">
+                                                <div class="product-img img-zoom-effect">
+                                                    <a href="@url ">
+                                                        <img class="img-full" src="~/Images/Products/@item.Thumb" alt="@item.Title" style="width:270px ; height:300px">
+                                                    </a>
+                                                    <div class="product-add-action">
+                                                        <ul>
+                                                            <li>
+                                                                <form asp-controller="ShoppingCart" asp-action="AddToCart" method="post">
+                                                                    <input type="hidden" name="productID" value="@item.ProductId" />
+                                                                    <input type="hidden" name="amount" value="1" /> 
+                                                                    <a href="javascript:void(0)" onclick="this.parentNode.submit();">
+                                                                        <i class="pe-7s-cart"></i>
+                                                                    </a>
+                                                                </form>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content align-self-center">
+                                                    <a class="product-name pb-2" href="@url">@item.ProductName</a>
+                                                    <div class="price-box pb-1">
+                                                        <span class="new-price">@item.Price</span>
+                                                    </div>
+                                                    <p class="short-desc mb-0">@item.ShortDesc</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination-area pt-10">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                @if (Model.PageCount > 1)
+                                {
+                                    <li class="page-item @(Model.HasPreviousPage ? "" : "disabled")">
+                                        <a class="page-link" href="@Url.Action("Index", new { page = Model.PageNumber - 1 })" aria-label="Previous">
+                                            <span class="fa fa-chevron-left"></span>
+                                        </a>
+                                    </li>
+
+                                    @for (int i = 1; i <= Model.PageCount; i++)
+                                    {
+                                        <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                                            <a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a>
+                                        </li>
+                                    }
+
+                                    <li class="page-item @(Model.HasNextPage ? "" : "disabled")">
+                                        <a class="page-link" href="@Url.Action("Index", new { page = Model.PageNumber + 1 })" aria-label="Next">
+                                            <span class="fa fa-chevron-right"></span>
+                                        </a>
+                                    </li>
+                                }
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

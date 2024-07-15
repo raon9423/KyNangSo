@@ -1,0 +1,43 @@
+@model WebAppCore.Models.Page
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="page-header">
+    <div class="header-sub-title">
+        <nav class="breadcrumb breadcrumb-dash">
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Home</a>
+            <a asp-area="Admin" asp-controller="AdminPage" asp-action="Index" class="breadcrumb-item">Danh Sách Trang</a>
+            <span class="breadcrumb-item active">Thông Tin Trang</span>
+        </nav>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Thông Tin Trang</h4>
+        <div class="table-responsive">
+            <table class="table">
+                <tr>
+                    <td>ID</td>
+                    <td class="text-dart font-weight-semibold">@Model.PageId</td>
+                </tr>
+                <tr>
+                    <td>Tên Trang</td>
+                    <td>@Model.PageName</td>
+                </tr>
+                <tr>
+                    <td>Published</td>
+                    <td>@(Model.Published.HasValue && Model.Published.Value ? "Yes" : "No")</td>
+                </tr>
+                <!-- Add other fields as needed -->
+            </table>
+        </div>
+        <a asp-action="Index">Quay Lại Danh Sách</a>
+        @section Scripts {
+            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        }
+    </div>
+</div>
